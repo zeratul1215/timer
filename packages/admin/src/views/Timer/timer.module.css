@@ -1,0 +1,121 @@
+/* 背景色切换 */
+.wholeContainer {
+  min-height: 100%;
+  transition: background 0.5s;
+  box-sizing: border-box;
+  padding: 24px;
+
+  &Idle {
+    background: #fbe9d5;
+  }
+  &Running {
+    background: #e3f2fd;
+  }
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+.tabActive {
+  background: #ffe082;
+  color: #333;
+  border-radius: 20px;
+  padding: 4px 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.tab {
+  color: #333;
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.timerContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto 32px auto;
+}
+.circleSvg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 400px;
+  z-index: 1;
+}
+.centerContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.timeText {
+  font-size: 96px;
+  font-weight: 500;
+  color: #222;
+  text-align: center;
+  margin-bottom: 16px;
+  letter-spacing: 2px;
+}
+.addBtns {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 0;
+}
+.addBtns .addBtn {
+  background: #fff8e1;
+  border: 1px solid #ffe082;
+  border-radius: 20px;
+  font-size: 18px;
+  padding: 8px 24px;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.2s, border 0.2s;
+}
+.addBtns .addBtn:hover {
+  background: #ffe082;
+  border-color: #ffd54f;
+}
+
+.bottomBar {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.bottomBar .startBtn, .bottomBar .resetBtn {
+  flex: 1;
+  background: #ffe082;
+  border: none;
+  border-radius: 24px;
+  font-size: 32px;
+  padding: 16px 0;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.2s;
+
+}
+
+.bottomBar .startBtn:hover, .bottomBar .resetBtn:hover {
+  background: #ffd54f;
+}

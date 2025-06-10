@@ -1,0 +1,26 @@
+{
+  "name": "@link/admin",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@linktivity/link-styles": "0.4.6",
+    "@link/share": "workspace:*",
+    "@linktivity/link-hooks": "^0.10.3",
+    "@linktivity/link-icons": "^0.10.3",
+    "@linktivity/link-ui": "^0.10.3",
+    "@linktivity/link-utils": "^0.10.3",
+    "clsx": "^2.0.0",
+    "i18next": "^23.10.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^14.1.0",
+    "react-router": "^7.6.0",
+    "use-immer": "^0.9.0"
+  }
+}
